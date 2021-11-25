@@ -1,0 +1,6 @@
+@import "reset.css";
+@import "media.css";
+
+body {
+  background-color: yellowgreen;
+}
