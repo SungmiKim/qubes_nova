@@ -1,0 +1,69 @@
+/* 인사말 */
+.greeting .sec_01 .msg_wrap {
+  background: #f4f4f4;
+  padding: 32px 24px;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.greeting .sec_01 .msg_wrap img {
+  margin-right: 24px;
+  width: 38%;
+}
+
+.greeting .sec_01 .msg_wrap p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  word-break: keep-all;
+}
+
+.greeting .sec_02 {
+  margin-top: 40px;
+}
+
+.greeting .sec_02 .inner {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting .sec_02 .img_chart {
+  max-width: 100%;
+  margin-top: 40px;
+}
+/* 인사말 End */
+
+@media all and (max-width: 1000px) {
+  .greeting .sec_01 .msg_wrap {
+    align-items: flex-start;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .greeting .sec_01 .inner {
+    padding: 0;
+  }
+
+  .greeting .sec_01 .msg_wrap {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+  }
+
+  .greeting .sec_01 .msg_wrap img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 0 24px;
+  }
+
+  .greeting .sec_02 {
+    margin-top: 24px;
+  }
+
+  .greeting .sec_02 .inner {
+    margin-top: 24px;
+  }
+}
