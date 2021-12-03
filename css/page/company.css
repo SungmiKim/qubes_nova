@@ -36,9 +36,72 @@
 }
 /* 인사말 End */
 
+/* 연혁 */
+.history .sec_01 {
+}
+.history .sec_01 .inner {
+  display: flex;
+}
+
+.history .sec_01 .col {
+}
+
+.history .sec_01 .col:first-child {
+  width: 300px;
+  /* width: 30%; */
+  background: url("../../images/bg/bg_history.png") no-repeat bottom / 100% 100%;
+  margin-right: 24px;
+}
+
+.history .sec_01 .col:first-child .wrap {
+  display: flex;
+  align-items: center;
+}
+
+.history .sec_01 .col .sec_title {
+  text-align: left;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.history .sec_01 .col .img_dot {
+}
+.history .sec_01 .col .row {
+  border-top: 1px solid #00b54d;
+  padding: 20px 0;
+  display: flex;
+}
+
+.history .sec_01 .col .row:last-child {
+  border-bottom: 1px solid #00b54d;
+}
+
+.history .sec_01 .col .row .year {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #333333;
+  margin-right: 44px;
+}
+
+.history .sec_01 .col .row ul {
+  flex: 1;
+}
+
+.history .sec_01 .col .row ul li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #828b92;
+}
+/* 연혁 End */
+
 @media all and (max-width: 1000px) {
   .greeting .sec_01 .msg_wrap {
     align-items: flex-start;
+  }
+  .history .sec_01 .inner {
+    justify-content: center;
   }
 }
 
@@ -65,5 +128,31 @@
 
   .greeting .sec_02 .inner {
     margin-top: 24px;
+  }
+  .history .sec_01 .inner {
+    flex-direction: column;
+  }
+  .history .sec_01 .col:first-child {
+    width: 100%;
+    background: none;
+  }
+  .history .sec_01 .col:first-child .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .history .sec_01 .col .img_dot {
+    margin: 16px 0 32px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .history .sec_01 .col .row .year {
+    font-size: 12px;
+    margin-right: 16px;
+  }
+
+  .history .sec_01 .col .row ul li {
+    font-size: 12px;
   }
 }
