@@ -411,6 +411,9 @@
 }
 
 @media all and (max-width: 768px) {
+  .swiper-container {
+    height: 480px;
+  }
   .main .sec_01 {
     display: flex;
     justify-content: center;
@@ -537,5 +540,11 @@
 
   .main .sec_04 .col .card:last-child {
     margin-right: 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .swiper-container {
+    height: 240px;
   }
 }

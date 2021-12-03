@@ -208,7 +208,7 @@
 
   .loc .nav_sec .link_wrap ul {
     flex-direction: column;
-    background: no-repeat;
+    background: #fff;
     box-shadow: none;
     display: none;
   }
