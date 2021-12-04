@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/page/company.css" />
   </head>
   <body>
     <div class="bg"></div>
@@ -270,7 +271,7 @@
             <div class="link_con">
               <div class="link_wrap">
                 <div class="mo_ver link_title">
-                  <span>회사소개</span>
+                  <span>찾아오시는 길</span>
                   <div class="arrow">화살표</div>
                 </div>
                 <ul>
@@ -281,6 +282,15 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="inner">
+          <div id="map"></div>
+          <div class="addr_info">
+            <h2>(주)노바인스트루먼트</h2>
+            <span class="addr">경기 하남시 조정대로 45 미사센텀비즈 F614호</span>
           </div>
         </div>
       </section>
@@ -345,10 +355,19 @@
       </footer>
     </div>
     <script src="./js/scripts.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=de637ca20f805e1b9af3c89c517d6894"></script>
     <script>
-      if (!$.cookie("popCookie")) {
-        openModal();
-      }
+      var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+        mapOption = {
+          center: new kakao.maps.LatLng(37.550926, 127.18472), // 지도의 중심좌표
+          level: 4, // 지도의 확대 레벨
+        };
+      var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+      var markerPosition = new kakao.maps.LatLng(37.550926, 127.18472);
+      var marker = new kakao.maps.Marker({
+        position: markerPosition,
+      });
+      marker.setMap(map);
     </script>
   </body>
 </html>

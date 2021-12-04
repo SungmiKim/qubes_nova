@@ -1,6 +1,7 @@
 .swiper-container {
   width: 100%;
-  height: 720px;
+  height: 50vw;
+  max-height: 800px;
 }
 .swiper-slide {
   text-align: center;
@@ -18,6 +19,11 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
 }
 
 .main .sec_01 {
@@ -39,7 +45,7 @@
   max-width: 190px;
   width: calc(100% / 5);
   background: #ffffff;
-  box-shadow: 0px 2px 8px rgba(175, 175, 175, 0.25);
+  box-shadow: 0 2px 8px rgba(175, 175, 175, 0.25);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -96,14 +102,11 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
 }
 .main .banner_wraper img {
-  position: relative;
+  position: absolute;
   height: 100%;
   padding: 18px 0 12px;
-  position: absolute;
   border-bottom: 4px solid transparent;
 }
 
@@ -111,6 +114,8 @@
   width: 2px;
   height: 24px;
   padding: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
 }
 
 .main .banner_wraper img.hover {
@@ -175,7 +180,12 @@
   justify-content: center;
 }
 
-.main .sec_03 .card .img_wrap > img {
+.main .sec_03 .card.wide .img_wrap > img {
+  width: auto;
+}
+
+.main .sec_03 .card.high .img_wrap > img {
+  height: auto;
   max-width: 100%;
 }
 
@@ -185,6 +195,11 @@
 
 .main .sec_03 .cen_col .card .img_wrap:hover .hover_bg {
   display: flex;
+}
+
+.main .sec_03 .cen_col .card .img_wrap img {
+  width: 80%;
+  max-width: 340px;
 }
 
 .main .sec_03 .card .img_wrap .showroom_txt {
@@ -201,6 +216,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   background: rgba(51, 51, 51, 0.3);
   border-radius: 5px;
   display: none;
@@ -262,7 +279,7 @@
   font-weight: 500;
   font-size: 13px;
   color: #333333;
-
+  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -411,9 +428,6 @@
 }
 
 @media all and (max-width: 768px) {
-  .swiper-container {
-    height: 480px;
-  }
   .main .sec_01 {
     display: flex;
     justify-content: center;
@@ -479,13 +493,19 @@
   }
 
   .main .sec_03 .cen_col .card .img_wrap {
-    max-height: 230px;
+    flex: none;
+    height: 300px;
+    max-height: none;
   }
 
   .main .sec_03 .card .img_wrap img {
     max-height: 100%;
+    width: auto;
   }
 
+  .main .sec_03 .cen_col .card .img_wrap img {
+    width: auto;
+  }
   .main .sec_03 .card .img_wrap .showroom_txt {
     top: 12px;
     left: 12px;
@@ -544,7 +564,4 @@
 }
 
 @media all and (max-width: 480px) {
-  .swiper-container {
-    height: 240px;
-  }
 }

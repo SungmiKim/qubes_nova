@@ -34,6 +34,9 @@
 }
 
 @media all and (max-width: 920px) {
+  header ul.menu li.logo {
+    flex: none;
+  }
   footer .inner {
     align-items: center;
   }

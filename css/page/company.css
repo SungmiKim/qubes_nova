@@ -17,6 +17,7 @@
   line-height: 21px;
   color: #333333;
   word-break: keep-all;
+  flex: 1;
 }
 
 .greeting .sec_02 {
@@ -37,13 +38,8 @@
 /* 인사말 End */
 
 /* 연혁 */
-.history .sec_01 {
-}
 .history .sec_01 .inner {
   display: flex;
-}
-
-.history .sec_01 .col {
 }
 
 .history .sec_01 .col:first-child {
@@ -58,14 +54,16 @@
   align-items: center;
 }
 
+.history .sec_01 .col:last-child {
+  width: 410px;
+}
+
 .history .sec_01 .col .sec_title {
   text-align: left;
   display: inline-block;
   margin-right: 20px;
 }
 
-.history .sec_01 .col .img_dot {
-}
 .history .sec_01 .col .row {
   border-top: 1px solid #00b54d;
   padding: 20px 0;
@@ -96,12 +94,109 @@
 }
 /* 연혁 End */
 
+/* 주요고객사 */
+.customer .list_sec .inner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1040px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.customer .list_sec .card {
+  width: 235px;
+  height: 235px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(175, 175, 175, 0.25);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.customer .list_sec .card .img_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.customer .list_sec .card img {
+  max-width: 230px;
+  max-height: 170px;
+  display: block;
+}
+
+.customer .list_sec .card .custom_name {
+  border-top: 1px solid #00b54d;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+
+.customer .list_sec .card .custom_name a:hover {
+  text-decoration: underline;
+}
+/* 주요고객사 End  */
+
+/* 오시는 길 */
+#map {
+  width: 660px;
+  height: 360px;
+}
+
+.contactUs .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactUs .addr_info {
+  width: 660px;
+  padding: 24px 16px;
+  margin-top: 26px;
+  background: #f4f4f4;
+}
+
+.contactUs .addr_info h2 {
+  font-weight: 900;
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.contactUs .addr_info .addr {
+  font-weight: 500;
+  color: #333333;
+}
+
+/* 오시는 길 End */
+
+@media all and (max-width: 1060px) {
+  .customer .list_sec .inner {
+    max-width: 785px;
+  }
+}
 @media all and (max-width: 1000px) {
   .greeting .sec_01 .msg_wrap {
     align-items: flex-start;
   }
   .history .sec_01 .inner {
     justify-content: center;
+  }
+}
+
+@media all and (max-width: 810px) {
+  .customer .list_sec .inner {
+    max-width: 530px;
   }
 }
 
@@ -122,6 +217,10 @@
     margin: 0 0 24px;
   }
 
+  .greeting .sec_01 .msg_wrap p {
+    width: 100%;
+    flex: none;
+  }
   .greeting .sec_02 {
     margin-top: 24px;
   }
@@ -129,6 +228,7 @@
   .greeting .sec_02 .inner {
     margin-top: 24px;
   }
+
   .history .sec_01 .inner {
     flex-direction: column;
   }
@@ -141,8 +241,43 @@
     flex-direction: column;
   }
 
+  .history .sec_01 .col:last-child {
+    margin: auto;
+  }
+
   .history .sec_01 .col .img_dot {
     margin: 16px 0 32px;
+  }
+
+  .customer .list_sec .inner {
+    max-width: 444px;
+  }
+  .customer .list_sec .card {
+    width: 192px;
+    height: 192px;
+  }
+
+  .customer .list_sec .card img {
+    max-width: 180px;
+  }
+
+  #map {
+    max-width: 660px;
+    width: 100%;
+    height: 300px;
+  }
+
+  .contactUs .addr_info {
+    max-width: 660px;
+    width: 100%;
+  }
+
+  .contactUs .addr_info h2 {
+    font-size: 14px;
+  }
+
+  .contactUs .addr_info .addr {
+    font-size: 13px;
   }
 }
 
@@ -154,5 +289,24 @@
 
   .history .sec_01 .col .row ul li {
     font-size: 12px;
+  }
+
+  .history .sec_01 .col:last-child {
+    max-width: 410px;
+    width: 100%;
+  }
+
+  .customer .list_sec .inner {
+    max-width: 360px;
+  }
+  .customer .list_sec .card {
+    width: 150px;
+  }
+
+  .customer .list_sec .card img {
+    max-width: 140px;
+  }
+  #map {
+    height: 200px;
   }
 }
