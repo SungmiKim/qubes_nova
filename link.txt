@@ -7,4 +7,5 @@ CEO 인사말>>>>>> greeting.html
 대리점>>>>>>>>> agency.html
 공지사항>>>>>>> notice.html
 자료실>>>>>>>>> reference.html
+글자세히보기>>>> boardDetail
 검색>>>>>>>>>>> search.html

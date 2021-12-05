@@ -79,24 +79,27 @@ $(function () {
   });
 
   // 메인 아이콘 메뉴
-  $(".main .sec_01 .row a").hover(function () {});
 
-  $(".main .sec_01 .row a").hover(
+  $(".main .sec_01 .row .icon_menu").hover(
     function () {
-      var imgSrc = $(this).children(".img_wrap").children().attr("src").replace(".png", "");
-      $(this).addClass("hover");
-      $(this)
-        .children(".img_wrap")
-        .children()
-        .attr("src", imgSrc + "_color.png");
+      if (!$(this).hasClass("active")) {
+        var imgSrc = $(this).children(".img_wrap").children().attr("src").replace(".png", "");
+        $(this).addClass("hover");
+        $(this)
+          .children(".img_wrap")
+          .children()
+          .attr("src", imgSrc + "_color.png");
+      }
     },
     function () {
-      var imgSrc = $(this).children(".img_wrap").children().attr("src").replace("_color.png", "");
-      $(this).removeClass("hover");
-      $(this)
-        .children(".img_wrap")
-        .children()
-        .attr("src", imgSrc + ".png");
+      if (!$(this).hasClass("active")) {
+        var imgSrc = $(this).children(".img_wrap").children().attr("src").replace("_color.png", "");
+        $(this).removeClass("hover");
+        $(this)
+          .children(".img_wrap")
+          .children()
+          .attr("src", imgSrc + ".png");
+      }
     }
   );
 });

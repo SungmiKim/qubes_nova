@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/page/product.css" />
   </head>
   <body>
     <div class="bg"></div>
@@ -268,6 +269,86 @@
             <div class="kor_title">제품소개</div>
           </div>
         </div>
+        <div class="inner">
+          <div class="search_con">
+            <h2>제품명 혹은 제품코드를 입력해주세요.</h2>
+            <div class="input_wrap">
+              <input type="text" placeholder="검색어를 입력해주세요." />
+              <img src="./images/icon/icon_search_bk.png" alt="검색" />
+            </div>
+          </div>
+          <div class="result_list">
+            <div class="card">
+              <div class="img_wrap">
+                <img src="./images/sample/sample01.png" alt="제품" />
+              </div>
+              <div class="search_info">
+                <div class="row cate">
+                  <div class="name">카테고리</div>
+                  <div class="desc">온도/휴대용 온도 측정기</div>
+                </div>
+                <div class="detail_info">
+                  <div class="row">
+                    <div class="name">제품명</div>
+                    <div class="desc">Dual Input Thermometer K Thermocouple Temperature</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img_wrap">
+                <img src="./images/sample/sample01.png" alt="제품" />
+              </div>
+              <div class="search_info">
+                <div class="row cate">
+                  <div class="name">카테고리</div>
+                  <div class="desc">온도/휴대용 온도 측정기</div>
+                </div>
+                <div class="detail_info">
+                  <div class="row">
+                    <div class="name">제품명</div>
+                    <div class="desc">Dual Input Thermometer K Thermocouple Temperature</div>
+                  </div>
+                  <div class="row">
+                    <div class="name">제품코드</div>
+                    <div class="desc">Si-TT3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img_wrap">
+                <img src="./images/sample/sample02.png" alt="제품" />
+              </div>
+              <div class="search_info">
+                <div class="row cate">
+                  <div class="name">카테고리</div>
+                  <div class="desc">온도/휴대용 온도 측정기</div>
+                </div>
+                <div class="detail_info">
+                  <div class="row">
+                    <div class="name">제품명</div>
+                    <div class="desc">Dual Input Thermometer K Thermocouple Temperature</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page_wrap cen">
+            <ul class="pagenation">
+              <li>
+                <a href=""><img src="./images/icon/icon_prev.png" alt="이전" /></a>
+              </li>
+              <li><a href="" class="active">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li>
+                <a href=""><img src="./images/icon/icon_next.png" alt="다음" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <footer>
         <div class="inner">
@@ -330,10 +411,5 @@
       </footer>
     </div>
     <script src="./js/scripts.js"></script>
-    <script>
-      if (!$.cookie("popCookie")) {
-        openModal();
-      }
-    </script>
   </body>
 </html>

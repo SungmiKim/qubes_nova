@@ -1,21 +1,22 @@
-.support .sec_inner {
+/* 대리점 */
+.agency .sec_inner {
   margin-top: 120px;
 }
 
-.support .map_con {
+.agency .map_con {
   border: 1px solid #f4f4f4;
   box-sizing: border-box;
   margin: 4px;
   padding: 16px;
 }
-.support .map_con .info h2 {
+.agency .map_con .info h2 {
   font-weight: bold;
   font-size: 24px;
   line-height: 35px;
   color: #333333;
   margin-bottom: 20px;
 }
-.support .map_con .info span {
+.agency .map_con .info span {
   font-weight: bold;
   line-height: 23px;
   color: #828b92;
@@ -26,10 +27,10 @@
   height: 390px;
   margin-left: 60px;
 }
-.support ul.tabs {
+.agency ul.tabs {
   display: flex;
 }
-.support ul.tabs li {
+.agency ul.tabs li {
   width: 20%;
   cursor: pointer;
   height: 56px;
@@ -41,31 +42,31 @@
   background: #f4f4f4;
   margin: 0 4px;
 }
-.support ul.tabs li.current {
+.agency ul.tabs li.current {
   font-weight: bold;
   background: #00b54d;
   color: #ffffff;
 }
-.support .tab-content {
+.agency .tab-content {
   display: none;
   padding: 0 4px;
 }
-.support .tab-content.current {
+.agency .tab-content.current {
   display: inherit;
 }
 
-.support .tab-content .agency_list li {
+.agency .tab-content .agency_list li {
   display: flex;
   margin-top: 8px;
 }
 
-.support .tab-content .agency_list li > div {
+.agency .tab-content .agency_list li > div {
   border: 1px solid #f4f4f4;
   display: flex;
   align-items: center;
 }
 
-.support .tab-content .agency_list li .agency_name {
+.agency .tab-content .agency_list li .agency_name {
   margin-right: 8px;
   width: 24%;
   font-weight: 500;
@@ -73,27 +74,236 @@
   color: #333333;
   justify-content: center;
 }
-.support .tab-content .agency_list li .agency_info {
+.agency .tab-content .agency_list li .agency_info {
   padding: 16px;
   width: 76%;
   font-weight: 500;
   line-height: 23px;
   color: #333333;
 }
+/* 대리점 End */
 
+/* 게시판 */
+.board .board_table {
+  border-top: 1px solid #00b54d;
+  margin-bottom: 40px;
+  min-height: 500px;
+}
+
+.board .board_table .row {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  color: #333333;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.board .board_table .row.row_head {
+  background: #f4f4f4;
+  font-weight: 500;
+}
+
+.board .board_table .row > div {
+  text-align: center;
+}
+
+.board .board_table .row .no {
+  width: 8%;
+}
+
+.board .board_table .row .title {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board .board_table .row .title a {
+  display: block;
+  text-align: center;
+  line-height: 44px;
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.board .board_table .row .title:hover a {
+  text-decoration: underline;
+}
+.board .board_table .row .sub_wrap {
+  width: 32%;
+  display: flex;
+}
+
+.board .board_table .row .sub_wrap .writer {
+  width: 38%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.board .board_table .row .sub_wrap .cnt {
+  width: 24%;
+}
+
+.board .board_table .row .sub_wrap .regdate {
+  width: 38%;
+}
+
+/* 게시판 End */
+
+/* 글 상세 */
+.board .detail_inner .detail_table {
+  border-top: 1px solid #00b54d;
+}
+
+.board .detail_table .detail_head {
+  height: 56px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.board .detail_table .detail_head .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 16px;
+}
+
+.board .detail_table .detail_info {
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 20px 24px;
+}
+
+.board .detail_table .detail_info .writer {
+  margin-right: 16px;
+}
+
+.board .detail_table .detail_info span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #828b92;
+  margin-right: 16px;
+}
+
+.board .detail_table .attach_info {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.board .detail_table .attach_info .file_name {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.board .detail_table .attach_info .file_name img {
+  margin-right: 10px;
+}
+
+.board .detail_table .attach_info .file_name span {
+  text-decoration: underline;
+}
+
+.board .detail_table .attach_info .down {
+  color: #bdbdbd;
+}
+.board .detail_table .detail_content {
+  padding: 16px 24px;
+  line-height: 1.8;
+}
+
+.board .detail_table .detail_content img {
+  display: block;
+  max-width: 100%;
+}
+
+.board .form_reply {
+  background: #f4f4f4;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.board .form_reply .row_wrap {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.board .form_reply .row_wrap .row {
+  margin-right: 12px;
+}
+
+.board .form_reply .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.board .form_reply .row .row_name {
+  margin-bottom: 8px;
+}
+
+.board .form_reply .row input {
+  width: 120px;
+  height: 24px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.board .form_reply .row textarea {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  resize: none;
+  padding: 10px;
+}
+
+.board .form_reply .btn_submit {
+  margin-top: 16px;
+  width: 51px;
+  height: 30px;
+  background: linear-gradient(180deg, rgba(51, 51, 51, 0) 0%, rgba(51, 51, 51, 0.2) 100%);
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+}
+/* 글 상세 End */
 @media all and (max-width: 768px) {
-  .support .sec_inner {
+  .agency .sec_inner {
     margin-top: 48px;
   }
-  .support .map_con {
+  .agency .map_con {
     flex-direction: column;
   }
-  .support .map_con .info h2 {
+  .agency .map_con .info h2 {
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 12px;
   }
-  .support .map_con .info span {
+  .agency .map_con .info span {
     font-size: 12px;
     line-height: 19px;
   }
@@ -102,24 +312,143 @@
     margin: 16px 0 0;
   }
 
-  .support ul.tabs li {
+  .agency ul.tabs li {
     font-size: 13px;
   }
 
-  .support .tab-content .agency_list li {
+  .agency .tab-content .agency_list li {
     flex-direction: column;
   }
 
-  .support .tab-content .agency_list li .agency_name {
+  .agency .tab-content .agency_list li .agency_name {
     width: 100%;
     font-size: 16px;
     padding: 8px;
     margin-bottom: 4px;
   }
-  .support .tab-content .agency_list li .agency_info {
+  .agency .tab-content .agency_list li .agency_info {
     width: 100%;
     font-size: 13px;
     line-height: 19px;
     padding: 16px 8px;
+  }
+
+  .board .board_table {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .board .board_table .row {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 12px 8px;
+  }
+
+  .board .board_table .row > div {
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .board .board_table .row.row_head,
+  .board .board_table .row .no {
+    display: none;
+  }
+
+  .board .board_table .row .title {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .board .board_table .row .title a {
+    text-align: left;
+    line-height: 1;
+  }
+
+  .board .board_table .row .sub_wrap {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .board .board_table .row .sub_wrap > div {
+    width: auto !important;
+    margin-right: 8px;
+  }
+
+  .board .board_table .row .sub_wrap > div::before {
+    content: "작성자";
+    margin-right: 4px;
+    color: #bdbdbd;
+  }
+
+  .board .board_table .row .sub_wrap .cnt::before {
+    content: "조회";
+  }
+
+  .board .board_table .row .sub_wrap .regdate::before {
+    content: "등록일";
+  }
+
+  .board .detail_table .detail_head {
+    padding: 20px 8px;
+  }
+
+  .board .detail_table .detail_head .regdate {
+    font-size: 13px;
+  }
+
+  .board .detail_table .detail_info {
+    padding: 20px 8px;
+    font-size: 14px;
+  }
+
+  .board .detail_table .detail_info .writer {
+    margin-right: 8px;
+  }
+
+  .board .detail_table .detail_info .writer span {
+    margin-right: 4px;
+  }
+
+  .board .detail_table .detail_info .cnt span {
+    margin-right: 4px;
+  }
+
+  .board .detail_table .attach_info {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .board .detail_table .attach_info .file_name {
+    margin: 0 0 12px;
+  }
+
+  .board .detail_table .detail_content {
+    padding: 16px 8px;
+    font-size: 13px;
+  }
+
+  .board .form_reply {
+    padding: 10px 8px;
+  }
+
+  .board .form_reply .row textarea {
+    height: 80px;
+  }
+
+  .board .form_reply .btn_submit {
+    margin-top: 12px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .loc.board {
+    min-height: auto;
+  }
+
+  .board .board_table {
+    min-height: 300px;
   }
 }

@@ -667,3 +667,28 @@ footer .footer_nav ul li a {
 .loc.product .nav_sec {
   background: url("../images/bg/bg_sub01.png") no-repeat center / 100% 100%;
 }
+
+/* 페이지 네이션 */
+.page_wrap .pagenation {
+  display: flex;
+}
+
+.page_wrap .pagenation li {
+  display: flex;
+}
+
+.page_wrap .pagenation li a {
+  width: 32px;
+  height: 32px;
+  margin: 0 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+}
+
+.page_wrap .pagenation li a.active {
+  background: #333333;
+  color: #ffffff;
+}

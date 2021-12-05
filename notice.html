@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/page/support.css" />
+    <link rel="stylesheet" href="./css/page/blank.css" />
   </head>
   <body>
     <div class="container">
@@ -281,6 +283,54 @@
             </div>
           </div>
         </div>
+
+        <!-- content -->
+        <div class="inner board_inner">
+          <div class="board_table">
+            <div class="row row_head">
+              <div class="no">번호</div>
+              <div class="title">제목</div>
+              <div class="sub_wrap">
+                <div class="writer">작성자</div>
+                <div class="cnt">조회</div>
+                <div class="regdate">작성일</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="no">1</div>
+              <div class="title"><a href="boardDetail.html">공지사항입니다.</a></div>
+              <div class="sub_wrap">
+                <div class="writer">관리자</div>
+                <div class="cnt">123</div>
+                <div class="regdate">2021.11.12</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="no">2</div>
+              <div class="title"><a href="boardDetail.html">공지사항입니다.</a></div>
+              <div class="sub_wrap">
+                <div class="writer">관리자</div>
+                <div class="cnt">123</div>
+                <div class="regdate">2021.11.12</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page_wrap cen">
+            <ul class="pagenation">
+              <li>
+                <a href=""><img src="./images/icon/icon_prev.png" alt="이전" /></a>
+              </li>
+              <li><a href="" class="active">1</a></li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li>
+                <a href=""><img src="./images/icon/icon_next.png" alt="다음" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <footer>
         <div class="inner">
@@ -343,10 +393,5 @@
       </footer>
     </div>
     <script src="./js/scripts.js"></script>
-    <script>
-      if (!$.cookie("popCookie")) {
-        openModal();
-      }
-    </script>
   </body>
 </html>

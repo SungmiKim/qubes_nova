@@ -297,4 +297,11 @@
   .loc .nav_sec {
     height: 120px;
   }
+
+  .page_wrap .pagenation li a {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    margin: 0 4px;
+  }
 }
