@@ -289,6 +289,7 @@
   border-radius: 5px;
   display: block;
   margin-left: auto;
+  color: #333333;
 }
 /* 글 상세 End */
 @media all and (max-width: 768px) {
