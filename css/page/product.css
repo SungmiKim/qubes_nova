@@ -740,6 +740,8 @@
   }
 
   .product .prod_list .card img {
+    width: 100%;
+    height: auto;
     max-width: 90%;
     max-height: 90%;
   }
