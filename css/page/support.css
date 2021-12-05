@@ -1,0 +1,125 @@
+.support .sec_inner {
+  margin-top: 120px;
+}
+
+.support .map_con {
+  border: 1px solid #f4f4f4;
+  box-sizing: border-box;
+  margin: 4px;
+  padding: 16px;
+}
+.support .map_con .info h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.support .map_con .info span {
+  font-weight: bold;
+  line-height: 23px;
+  color: #828b92;
+}
+
+#map {
+  width: 235px;
+  height: 390px;
+  margin-left: 60px;
+}
+.support ul.tabs {
+  display: flex;
+}
+.support ul.tabs li {
+  width: 20%;
+  cursor: pointer;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  background: #f4f4f4;
+  margin: 0 4px;
+}
+.support ul.tabs li.current {
+  font-weight: bold;
+  background: #00b54d;
+  color: #ffffff;
+}
+.support .tab-content {
+  display: none;
+  padding: 0 4px;
+}
+.support .tab-content.current {
+  display: inherit;
+}
+
+.support .tab-content .agency_list li {
+  display: flex;
+  margin-top: 8px;
+}
+
+.support .tab-content .agency_list li > div {
+  border: 1px solid #f4f4f4;
+  display: flex;
+  align-items: center;
+}
+
+.support .tab-content .agency_list li .agency_name {
+  margin-right: 8px;
+  width: 24%;
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+  justify-content: center;
+}
+.support .tab-content .agency_list li .agency_info {
+  padding: 16px;
+  width: 76%;
+  font-weight: 500;
+  line-height: 23px;
+  color: #333333;
+}
+
+@media all and (max-width: 768px) {
+  .support .sec_inner {
+    margin-top: 48px;
+  }
+  .support .map_con {
+    flex-direction: column;
+  }
+  .support .map_con .info h2 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+  .support .map_con .info span {
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  #map {
+    margin: 16px 0 0;
+  }
+
+  .support ul.tabs li {
+    font-size: 13px;
+  }
+
+  .support .tab-content .agency_list li {
+    flex-direction: column;
+  }
+
+  .support .tab-content .agency_list li .agency_name {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 4px;
+  }
+  .support .tab-content .agency_list li .agency_info {
+    width: 100%;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 16px 8px;
+  }
+}

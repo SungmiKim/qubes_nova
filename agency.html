@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/page/support.css" />
+    <link rel="stylesheet" href="./css/page/blank.css" />
   </head>
   <body>
     <div class="container">
@@ -281,6 +283,85 @@
             </div>
           </div>
         </div>
+
+        <!-- content -->
+        <div class="inner sec_inner">
+          <div class="map_con cen">
+            <div class="info">
+              <h2>
+                노바인스트루먼트 <br />
+                전국 지사 및 대리점을 소개합니다.
+              </h2>
+              <span>※ 지도 클릭시 해당 지역의 지사/대리점이 나타납니다.</span>
+            </div>
+            <div id="map">
+              <img src="./images/sample/map.png" alt="map" />
+            </div>
+          </div>
+
+          <!-- Tap menu -->
+          <ul class="tabs">
+            <li class="tap-menu current" data-tab="tab-1">서울, 경기</li>
+            <li class="tap-menu" data-tab="tab-2">충청</li>
+            <li class="tap-menu" data-tab="tab-3">강원</li>
+            <li class="tap-menu" data-tab="tab-4">호남</li>
+            <li class="tap-menu" data-tab="tab-5">영남</li>
+          </ul>
+          <!-- Tap1 Content -->
+          <div id="tab-1" class="content tab-content current">
+            <ul class="agency_list">
+              <li>
+                <div class="agency_name">CKT ENG</div>
+                <div class="agency_info">
+                  주소 : 경기도 안산시 단원구 광덕서로 100 <br />
+                  연락처 : 070-8872-7700
+                </div>
+              </li>
+              <li>
+                <div class="agency_name">제이와이테크</div>
+                <div class="agency_info">
+                  주소 : 경기도 성남시 중원구 하대원동 100번지 <br />
+                  홈페이지 : http://www.jy-tech.KR <br />
+                  연락처 : 031-762-1126
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Tap2 Content -->
+          <div id="tab-2" class="content tab-content">충청</div>
+          <!-- Tap3 Content -->
+          <div id="tab-3" class="content tab-content">강원</div>
+          <!-- Tap4 Content -->
+          <div id="tab-4" class="content tab-content">
+            <ul class="agency_list">
+              <li>
+                <div class="agency_name">정엔지니어링</div>
+                <div class="agency_info">
+                  주소 : 전남 여수시 선원7길 7 <br />
+                  홈페이지 : http://www.jungeng.kr <br />
+                  연락처 : 061)683-9295~6
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Tap5 Content -->
+          <div id="tab-5" class="content tab-content">
+            <ul class="agency_list">
+              <li>
+                <div class="agency_name">인영 인터내셔널</div>
+                <div class="agency_info">연락처 : 010-3136-8360</div>
+              </li>
+              <li>
+                <div class="agency_name">이레테크</div>
+                <div class="agency_info">
+                  주소 : 경상북도 포항시 북구 흥해읍 신덕로 60 (포항 창업 보육센터 104) <br />
+                  홈페이지 : http://www.irehtech.co.kr/home <br />
+                  연락처 : 054-272-1010
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <footer>
         <div class="inner">
@@ -344,9 +425,14 @@
     </div>
     <script src="./js/scripts.js"></script>
     <script>
-      if (!$.cookie("popCookie")) {
-        openModal();
-      }
+      // 탭 메뉴
+      $("ul.tabs li").click(function () {
+        var tab_id = $(this).attr("data-tab");
+        $("ul.tabs li").removeClass("current");
+        $(".tab-content").removeClass("current");
+        $(this).addClass("current");
+        $("#" + tab_id).addClass("current");
+      });
     </script>
   </body>
 </html>

@@ -143,10 +143,14 @@ a {
   outline: none;
 }
 
-input {
+input,
+select {
   border: none;
+  box-sizing: border-box;
 }
 
-input:focus {
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
 }

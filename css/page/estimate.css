@@ -1,0 +1,382 @@
+.estimate .form_es {
+  border-top: 1px solid #00b54d;
+  margin-top: 50px;
+}
+
+.estimate .form_es .row {
+  display: flex;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.estimate .row .row_name {
+  width: 150px;
+  height: 56px;
+  background: #f4f4f4;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.estimate .row .input_wrap {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.estimate .row .input_wrap input {
+  background: #f9f9f9;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.estimate .row.subject .input_wrap input {
+  width: 100%;
+}
+
+.estimate .row.tel .input_wrap input {
+  width: 76px;
+}
+
+.estimate .row.mail .input_wrap input {
+  width: 120px;
+}
+.estimate .row .input_wrap select {
+  height: 32px;
+  background: #f9f9f9;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+.estimate .row.tel .input_wrap select {
+  width: 76px;
+}
+.estimate .row.mail .input_wrap select {
+  margin-left: 8px;
+}
+.estimate .row.tel .input_wrap span {
+  color: #dbdbdb;
+  margin: 0 8px;
+}
+.estimate .row.mail .input_wrap span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  margin: 0 8px;
+}
+.estimate .row.search_prod button {
+  width: 80px;
+  height: 32px;
+  background: #f9f9f9;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  margin-left: 8px;
+}
+.estimate .row.con .row_name {
+  height: auto;
+}
+.estimate .row.con .input_wrap {
+  padding: 16px;
+}
+
+.estimate .row.con .input_wrap textarea {
+  width: 100%;
+  height: 300px;
+  resize: none;
+  background: #f9f9f9;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.estimate .row.attach_file .input_wrap input {
+  background: none;
+  border: none;
+  height: auto;
+}
+
+.estimate .agree_con {
+  border-top: 1px solid #00b54d;
+  margin-top: 24px;
+}
+.estimate .agree_con .row_name {
+  height: 56px;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  padding: 0 16px;
+}
+
+.estimate .agree_con .row_name span {
+  margin-left: 4px;
+  color: #dc0000;
+}
+.estimate .agree_con .txt {
+  border: 1px solid #dbdbdb;
+  padding: 20px 16px;
+  margin: 4px 0 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.estimate .btn_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.estimate .btn_wrap .chk_wrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.estimate .btn_wrap .chk_wrap input.chk {
+  margin-right: 16px;
+}
+
+.estimate .btn_wrap .btn_submit {
+  width: 150px;
+  height: 40px;
+  background: #00b54d;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.estimate .modal_background {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
+  z-index: 900;
+}
+
+.estimate .modal_content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 490px;
+  min-height: 194px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-bottom: 40px;
+}
+
+.estimate .modal_title {
+  width: 100%;
+  height: 44px;
+  padding: 0 24px;
+  background: #00b54d;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.estimate .modal_inner h2 {
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+  margin: 32px 0 16px;
+}
+
+.estimate .modal_inner .search_con {
+  width: 235px;
+  height: 42px;
+  background: #ffffff;
+  box-shadow: 0px 4px 7px rgba(175, 175, 175, 0.25);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.estimate .modal_inner .search_con input {
+  margin-left: 16px;
+}
+
+.estimate .modal_inner .search_wrap button {
+  width: 65px;
+  height: 42px;
+  background: #00b54d;
+  box-shadow: 0px 4px 7px rgba(175, 175, 175, 0.25);
+  border-radius: 5px;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #f4f4f4;
+}
+
+.estimate .modal_inner ul.list {
+  width: 320px;
+  max-height: 150px;
+  overflow-y: auto;
+  margin: 20px auto 0;
+  padding: 0 16px;
+}
+
+.estimate .modal_inner ul.list li {
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+.estimate .modal_inner ul.list li:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 768px) {
+  .estimate .inner {
+  }
+
+  .estimate .form_es {
+    margin-top: 32px;
+  }
+
+  .estimate .form_es .row {
+    flex-direction: column;
+  }
+
+  .estimate .row .row_name {
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+  }
+
+  .estimate .row.con .row_name {
+    height: 42px;
+  }
+
+  .estimate .row .input_wrap {
+    padding: 12px 8px;
+  }
+
+  .estimate .row.tel .input_wrap {
+  }
+
+  .estimate .row .input_wrap input {
+    width: 100%;
+  }
+
+  .estimate .row.subject .input_wrap input {
+  }
+
+  .estimate .row.tel .input_wrap input {
+  }
+
+  .estimate .row.mail .input_wrap input {
+    width: 100px;
+  }
+  .estimate .row .input_wrap select {
+    font-size: 12px;
+  }
+  .estimate .row.mail .input_wrap select {
+    width: 80px;
+    padding-left: 4px;
+  }
+  .estimate .row.tel .input_wrap span {
+  }
+  .estimate .row.mail .input_wrap span {
+    font-size: 14px;
+    margin: 0 4px;
+  }
+  .estimate .row.search_prod button {
+    font-size: 12px;
+  }
+
+  .estimate .row.con .input_wrap {
+    padding: 12px 8px;
+  }
+
+  .estimate .row.con .input_wrap textarea {
+    height: 250px;
+  }
+
+  .estimate .row.attach_file .input_wrap input {
+    padding: 0;
+  }
+
+  .estimate .agree_con {
+  }
+  .estimate .agree_con .row_name {
+    height: 32px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+
+  .estimate .agree_con .row_name span {
+  }
+  .estimate .agree_con .txt {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .estimate .btn_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .estimate .btn_wrap .chk_wrap {
+    font-size: 13px;
+  }
+
+  .estimate .btn_wrap .chk_wrap input.chk {
+    margin-right: 8px;
+  }
+
+  .estimate .btn_wrap .btn_submit {
+    margin-left: auto;
+    margin-top: 16px;
+    width: 96px;
+    height: 35px;
+    font-size: 13px;
+  }
+
+  .estimate .modal_content {
+    max-width: 490px;
+    width: 80vw;
+  }
+
+  .estimate .modal_inner ul.list {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .estimate .row .row_name,
+  .estimate .row.con .row_name {
+    height: 32px;
+  }
+
+  .estimate .modal_inner .search_wrap button {
+    display: none;
+  }
+
+  .estimate .modal_inner ul.list {
+    width: 235px;
+  }
+}
