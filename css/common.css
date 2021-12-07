@@ -136,6 +136,7 @@ header ul.menu li > div .sub_menu {
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(175, 175, 175, 0.25);
   display: none;
+  z-index: 2;
 }
 
 header ul.menu li > div.prod .sub_menu {
@@ -304,6 +305,15 @@ header .mo_menu {
   border-radius: 5px;
 }
 
+.quick_menu.index {
+  z-index: 1;
+}
+
+.quick_menu.index {
+  position: absolute;
+  top: calc(100vh + 207px);
+}
+
 .quick_menu .menu_name {
   height: 48px;
   background: linear-gradient(180deg, #008734 0%, #00b54d 100%);
@@ -320,7 +330,8 @@ header .mo_menu {
   align-items: center;
 }
 
-.quick_menu .btn_wrap a {
+.quick_menu .btn_wrap a,
+.quick_menu .btn_tel .tel_wrap {
   width: 100%;
   height: 36px;
   display: flex;
@@ -343,6 +354,20 @@ header .mo_menu {
 .quick_menu .btn_wrap a > span {
   font-weight: 500;
   color: #00b54d;
+}
+
+.quick_menu .btn_tel {
+  padding-top: 0;
+}
+
+.quick_menu .btn_tel .tel_wrap img {
+  margin-right: 4px;
+}
+
+.quick_menu .btn_tel .tel_wrap span {
+  font-weight: 500;
+  font-size: 13px;
+  color: #333333;
 }
 
 .quick_menu .sns_wrap {
@@ -416,6 +441,13 @@ footer .left .info_wrap > div.row .tel {
 
 footer .left .copyright {
   font-size: 11px;
+}
+
+footer .left .co_num {
+  margin-top: 8px;
+}
+footer .left .co_num span:first-child {
+  margin-right: 16px;
 }
 
 footer .inner .right {
@@ -666,7 +698,7 @@ footer .footer_nav ul li a {
 }
 
 .loc.estimate .nav_sec {
-  background: url("../images/bg/bg_sub02.png") no-repeat center / 100% 100%;
+  background: url("../images/bg/bg_sub02_ver1.png") no-repeat center / 100% 100%;
 }
 
 .loc.product .nav_sec {

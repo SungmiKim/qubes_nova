@@ -67,7 +67,6 @@ $(function () {
 
   // 햄버거 메뉴 클릭 시
   $("header ul.menu > li.mo_ver").click(function () {
-    console.log("모바일 메뉴");
     $(".mo_menu").slideToggle();
     $(".bg").toggleClass("show");
   });
@@ -79,7 +78,6 @@ $(function () {
   });
 
   // 메인 아이콘 메뉴
-
   $(".main .sec_01 .row .icon_menu").hover(
     function () {
       if (!$(this).hasClass("active")) {

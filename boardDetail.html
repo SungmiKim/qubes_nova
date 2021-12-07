@@ -254,6 +254,9 @@
                     <a href=""><img src="./images/icon/icon_instagram.png" alt="sns" /></a>
                   </div>
                 </div>
+                <div class="btn_wrap btn_tel">
+                  <div class="tel_wrap"><img src="images/icon/icon_tel_g.png" alt="전화" /> <span>031-8028-9936</span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -302,7 +305,17 @@
             <div class="attach_info">
               <div class="file_name">
                 <img src="./images/icon/icon_file.png" alt="파일" />
-                <span>노바인스트루먼트.pdf</span>
+                <span>첨부파일(2)</span>
+                <ul class="file_list">
+                  <li>
+                    <img src="./images/icon/icon_file_g.png" alt="파일" />
+                    <span>엑셀파일.xl</span>
+                  </li>
+                  <li>
+                    <img src="./images/icon/icon_file_g.png" alt="파일" />
+                    <span>엑셀파일.xl</span>
+                  </li>
+                </ul>
               </div>
               <div class="down">다운로드수: 0</div>
             </div>
@@ -358,6 +371,10 @@
               Copyright ⓒ 2021 (주)노바인스트루먼트 All rights reserved. <br />
               Contact nova@novainstrument.com for more information.
             </div>
+            <div class="co_num">
+              <span>사업자등록번호 762-87-00773 </span>
+              <span>개인정보 관리자 문건호</span>
+            </div>
           </div>
           <div class="right">
             <div class="footer_nav">
@@ -391,5 +408,10 @@
       </footer>
     </div>
     <script src="./js/scripts.js"></script>
+    <script>
+      $(".file_name").click(function () {
+        $(".file_list").slideToggle();
+      });
+    </script>
   </body>
 </html>

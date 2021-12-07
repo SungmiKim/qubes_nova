@@ -206,6 +206,7 @@
 }
 
 .board .detail_table .attach_info .file_name {
+  position: relative;
   margin-right: 8px;
   display: flex;
   align-items: center;
@@ -213,10 +214,38 @@
 
 .board .detail_table .attach_info .file_name img {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .board .detail_table .attach_info .file_name span {
   text-decoration: underline;
+  cursor: pointer;
+}
+
+.board .detail_table .attach_info .file_name > .file_list {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 165px;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+}
+
+.board .detail_table .attach_info .file_name > .file_list li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #828b92;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.board .detail_table .attach_info .file_name > .file_list li:last-child {
+  margin-bottom: 0;
 }
 
 .board .detail_table .attach_info .down {

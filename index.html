@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/page/main.css" />
   </head>
+
   <body>
     <div class="container">
       <header>
@@ -233,31 +234,6 @@
                 <span class="btn">검색</span>
               </div>
             </div>
-            <div class="quick_menu">
-              <div class="menu_name cen pc_ver">Quick Menu</div>
-              <div class="wrap">
-                <div class="btn_wrap">
-                  <a href="">
-                    <img src="images/icon/icon_naverStore.png" alt="상점" />
-                    <span>Naver Store</span>
-                  </a>
-                  <a href="estimate.html"> <span>견적문의</span> </a>
-                  <a href="search.html" class="pc_ver">
-                    <img src="./images/icon/icon_search.png" alt="검색" />
-                    <span>Search</span>
-                  </a>
-                </div>
-                <div class="sns_wrap">
-                  <div class="title pc_ver">SNS 바로가기</div>
-                  <div class="sns_btns">
-                    <a href=""><img src="./images/icon/icon_blog.png" alt="sns" /></a>
-                    <a href=""><img src="./images/icon/icon_kakao.png" alt="sns" /></a>
-                    <a href=""><img src="./images/icon/icon_facebook.png" alt="sns" /></a>
-                    <a href=""><img src="./images/icon/icon_instagram.png" alt="sns" /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </header>
@@ -265,9 +241,42 @@
         <!-- Swiper -->
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/img/img_swiper01.png" alt="swiper" /></div>
-            <div class="swiper-slide"><img src="./images/img/img_swiper02.png" alt="swiper" /></div>
-            <div class="swiper-slide"><img src="./images/img/img_swiper03.png" alt="swiper" /></div>
+            <div class="swiper-slide slide1">
+              <div class="slide_info">
+                <img src="./images/img/banner/bannerLogo01.png" alt="로고" />
+                <h3>
+                  정밀 계측 분야의 신성 NOVA <br />
+                  ㈜노바인스트루먼트
+                </h3>
+
+                <p class="txt">
+                  혁신적인 스마트 센서 및 트랜스미터, 휴대용 벤치형 계측기 <br />
+                  온도, 습도, 압력, 유량, 전기 등 분야 교정기 Calibrator
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide slide2">
+              <div class="slide_info">
+                <img src="./images/img/banner/bannerLogo02.png" alt="로고" />
+                <h3>정밀 계측 분야의 신성 NOVA <br />㈜노바인스트루먼트</h3>
+
+                <p class="txt">
+                  시험, 품질 검사, 교정 KOLAS 인정, GMP 밸리데이션 제품 <br />
+                  TEST BENCH, 실험실 연구소 설비 및 자동화 시스템
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide slide3">
+              <div class="slide_info">
+                <img src="./images/img/banner/bannerLogo03.png" alt="로고" />
+                <h3>정밀 계측 분야의 신성 NOVA <br />㈜노바인스트루먼트</h3>
+
+                <p class="txt">
+                  가스 및 실내 공기질(CO, CO2), HVAC, 환경, 기상 측정 <br />
+                  DAQ & 데이터 수집 및 분석 로거 LOGGER
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -325,7 +334,7 @@
             <div class="banner_wraper left">
               <img src="./images/img/partners/01.png" alt="partner" />
               <img src="./images/img/partners/bar.png" alt="bar" class="bar" />
-              <img src="./images/img/partners/02.jpg" alt="partner" />
+              <img src="./images/img/partners/02.png" alt="partner" />
               <img src="./images/img/partners/bar.png" alt="bar" class="bar" />
               <img src="./images/img/partners/03.png" alt="partner" />
               <img src="./images/img/partners/bar.png" alt="bar" class="bar" />
@@ -579,6 +588,34 @@
           </div>
         </div>
       </section>
+      <div class="quick_menu index">
+        <div class="menu_name cen pc_ver">Quick Menu</div>
+        <div class="wrap">
+          <div class="btn_wrap">
+            <a href="">
+              <img src="images/icon/icon_naverStore.png" alt="상점" />
+              <span>Naver Store</span>
+            </a>
+            <a href="estimate.html"> <span>견적문의</span> </a>
+            <a href="search.html" class="pc_ver">
+              <img src="./images/icon/icon_search.png" alt="검색" />
+              <span>Search</span>
+            </a>
+          </div>
+          <div class="sns_wrap">
+            <div class="title pc_ver">SNS 바로가기</div>
+            <div class="sns_btns">
+              <a href=""><img src="./images/icon/icon_blog.png" alt="sns" /></a>
+              <a href=""><img src="./images/icon/icon_kakao.png" alt="sns" /></a>
+              <a href=""><img src="./images/icon/icon_facebook.png" alt="sns" /></a>
+              <a href=""><img src="./images/icon/icon_instagram.png" alt="sns" /></a>
+            </div>
+          </div>
+          <div class="btn_wrap btn_tel">
+            <div class="tel_wrap"><img src="images/icon/icon_tel_g.png" alt="전화" /> <span>031-8028-9936</span></div>
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="inner">
           <div class="left">
@@ -606,6 +643,10 @@
             <div class="copyright">
               Copyright ⓒ 2021 (주)노바인스트루먼트 All rights reserved. <br />
               Contact nova@novainstrument.com for more information.
+            </div>
+            <div class="co_num">
+              <span>사업자등록번호 762-87-00773 </span>
+              <span>개인정보 관리자 문건호</span>
             </div>
           </div>
           <div class="right">
@@ -642,16 +683,30 @@
     <script src="./js/scripts.js"></script>
     <script src="./js/rolling.js"></script>
     <script src="./js/swiper.min.js"></script>
+
     <script>
+      // 오늘 하루 보지 않기
       if (!$.cookie("popCookie")) {
         openModal();
       }
 
+      // 메인 배너
       var swiper = new Swiper(".swiper-container", {
         loop: true,
         autoplay: {
           delay: 3000, // 시간 설정
         },
+      });
+
+      // 퀵 메뉴
+      var $window = $(window);
+      var $quickMenu = $(".quick_menu");
+      $(window).scroll(function () {
+        if ($window.scrollTop() > $window.height() - $window.height() / 3) {
+          $quickMenu.removeClass("index");
+        } else {
+          $quickMenu.addClass("index");
+        }
       });
     </script>
   </body>
