@@ -94,6 +94,10 @@ header ul.menu li.logo {
   flex: 1;
 }
 
+header ul.menu li.logo a .img_logo {
+  max-width: 140px;
+}
+
 header ul.menu li > div {
   position: relative;
   height: 100%;
@@ -431,6 +435,7 @@ footer .right h2 {
   position: relative;
   font-weight: bold;
   font-size: 13px;
+  line-height: 23px;
   color: #ffffff;
   padding-bottom: 8px;
 }

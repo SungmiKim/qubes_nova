@@ -145,6 +145,10 @@
   border-radius: 5px;
 }
 
+.main .sec_03 .card:hover .img_wrap img {
+  transform: scale(1.1);
+}
+
 .main .sec_03 .side_col .card:first-child {
   margin-bottom: 20px;
 }
@@ -178,6 +182,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main .sec_03 .card .img_wrap img {
+  transition: all 0.5s linear;
 }
 
 .main .sec_03 .card.wide .img_wrap > img {
@@ -326,8 +334,6 @@
   padding: 24px 0 68px;
   background: #f4f4f4;
 }
-.main .sec_04 .inner {
-}
 
 .main .sec_04 h2 {
   font-weight: bold;
@@ -355,13 +361,22 @@
 .main .sec_04 .card .img_wrap {
   width: 100%;
   height: 200px;
+  overflow: hidden;
 }
+
+.main .sec_04 .card .img_wrap:hover img {
+  transform: scale(1.1);
+}
+
 .main .sec_04 .card .img_wrap img {
   width: 100%;
   height: 100%;
+  transition: all 0.5s linear;
 }
 .main .sec_04 .card .info_wrap {
   padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
 }
 .main .sec_04 .card .info_wrap .regdate {
   font-weight: 500;
@@ -392,14 +407,17 @@
   height: 7.5em;
 }
 .main .sec_04 .card .info_wrap .btn_more {
-  background: #00b54d;
-  border-radius: 29px;
   font-weight: 500;
   font-size: 13px;
-  color: #ffffff;
-  padding: 6px 8px;
-  display: inline-block;
-  margin-top: 16px;
+  line-height: 18px;
+  color: #333333;
+  text-decoration: underline;
+  margin: 18px 0 0;
+  align-self: center;
+}
+
+.modal_content.main_modal {
+  position: absolute;
 }
 
 @media all and (max-width: 1000px) {
