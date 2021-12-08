@@ -234,6 +234,34 @@
                 <span class="btn">검색</span>
               </div>
             </div>
+            <div class="quick_menu mo_ver">
+              <div class="menu_name cen pc_ver">Quick Menu</div>
+              <div class="wrap">
+                <div class="btn_wrap">
+                  <a href="">
+                    <img src="images/icon/icon_naverStore.png" alt="상점" />
+                    <span>Naver Store</span>
+                  </a>
+                  <a href="estimate.html"> <span>견적문의</span> </a>
+                  <a href="search.html" class="pc_ver">
+                    <img src="./images/icon/icon_search.png" alt="검색" />
+                    <span>Search</span>
+                  </a>
+                </div>
+                <div class="sns_wrap">
+                  <div class="title pc_ver">SNS 바로가기</div>
+                  <div class="sns_btns">
+                    <a href=""><img src="./images/icon/icon_blog.png" alt="sns" /></a>
+                    <a href=""><img src="./images/icon/icon_kakao.png" alt="sns" /></a>
+                    <a href=""><img src="./images/icon/icon_facebook.png" alt="sns" /></a>
+                    <a href=""><img src="./images/icon/icon_instagram.png" alt="sns" /></a>
+                  </div>
+                </div>
+                <div class="btn_wrap btn_tel">
+                  <div class="tel_wrap"><img src="images/icon/icon_tel_g.png" alt="전화" /> <span>031-8028-9936</span></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -278,6 +306,9 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
 
         <!-- 아이콘 메뉴 -->
@@ -404,7 +435,11 @@
                 <div class="card">
                   <div class="img_wrap">
                     <img src="./images/img/product/main03.png" alt="product" />
-                    <div class="showroom_txt">Welcome to Aralab 360º Showroom</div>
+                    <div class="showroom_txt">
+                      Welcome to <br />
+                      Aralab 360º <br />
+                      Showroom
+                    </div>
                     <div class="hover_bg">
                       <a href="http://showroom.aralab.pt/">쇼룸 들어가기</a>
                     </div>
@@ -588,7 +623,7 @@
           </div>
         </div>
       </section>
-      <div class="quick_menu index">
+      <div class="quick_menu pc_ver">
         <div class="menu_name cen pc_ver">Quick Menu</div>
         <div class="wrap">
           <div class="btn_wrap">
@@ -693,8 +728,28 @@
       // 메인 배너
       var swiper = new Swiper(".swiper-container", {
         loop: true,
-        autoplay: {
-          delay: 3000, // 시간 설정
+        // autoplay: {
+        //   delay: 3000, // 시간 설정
+        // },
+        touchRatio: 0, //드래그 금지
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        on: {
+          slideChange: function () {
+            var index = swiper.realIndex + 1;
+            $(".swiper-slide .slide_info > img").css("opacity", "0").css("animation", "");
+            $(".slide" + index + " .slide_info > img").css("animation", "slideIn 0.7s 0.3s forwards");
+            $(".swiper-slide .slide_info h3").css("opacity", "0").css("animation", "");
+            $(".slide" + index + " .slide_info h3").css("animation", "slideIn 0.7s 0.6s forwards");
+            $(".swiper-slide p.txt").css("opacity", "0").css("animation", "");
+            $(".slide" + index + " p.txt").css("animation", "slideIn 0.7s 0.9s forwards");
+          },
         },
       });
 
@@ -702,10 +757,14 @@
       var $window = $(window);
       var $quickMenu = $(".quick_menu");
       $(window).scroll(function () {
-        if ($window.scrollTop() > $window.height() - $window.height() / 3) {
-          $quickMenu.removeClass("index");
+        if (window.innerWidth > 768) {
+          if ($window.scrollTop() > $window.height() - $window.height() / 2) {
+            $quickMenu.removeClass("index");
+          } else {
+            $quickMenu.addClass("index");
+          }
         } else {
-          $quickMenu.addClass("index");
+          $quickMenu.removeClass("index");
         }
       });
     </script>

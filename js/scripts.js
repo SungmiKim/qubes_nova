@@ -1,4 +1,15 @@
 // 팝업
+function openImg(obj) {
+  $(".img_modal .prod_img").attr("src", obj.src);
+  $(".img_modal_bg").fadeIn();
+  $(".img_modal").fadeIn();
+  $(".close").click(function () {
+    $(".img_modal_bg").fadeOut();
+    $(".img_modal").fadeOut();
+  });
+}
+
+// 팝업
 function openModal() {
   $(".modal_content").fadeIn();
 

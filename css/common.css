@@ -311,7 +311,7 @@ header .mo_menu {
 
 .quick_menu.index {
   position: absolute;
-  top: calc(100vh + 207px);
+  top: 100vh;
 }
 
 .quick_menu .menu_name {

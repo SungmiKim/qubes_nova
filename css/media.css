@@ -71,8 +71,17 @@
     margin-bottom: 16px;
   }
 
+  .loc {
+    padding-top: 56px;
+  }
+
   header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     height: 56px;
+    box-shadow: 0 2px 8px rgb(175 175 175 / 25%);
   }
 
   header .mo_menu {
@@ -141,7 +150,7 @@
 
   .quick_menu .sns_wrap {
     padding: 0;
-    margin: 24px 0;
+    margin: 10px 0;
   }
 
   .quick_menu .sns_wrap .sns_btns {
@@ -150,6 +159,10 @@
 
   .quick_menu .sns_wrap .sns_btns img {
     margin-right: 16px;
+  }
+
+  .quick_menu .btn_tel .tel_wrap {
+    margin-bottom: 20px;
   }
 
   .modal_content {
