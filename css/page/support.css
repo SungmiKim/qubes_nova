@@ -351,13 +351,13 @@
   flex: 1;
 }
 
-.board .regdate {
+.board .reply_info .regdate {
   position: relative;
   color: #bdbdbd;
   padding-right: 8px;
   margin-right: 8px;
 }
-.board .regdate::before {
+.board .reply_info .regdate::before {
   position: absolute;
   top: 50%;
   left: 100%;
@@ -368,8 +368,6 @@
   background-color: #333333;
 }
 
-.board .btn_delete {
-}
 /* 글 상세 End */
 @media all and (max-width: 768px) {
   .agency .sec_inner {

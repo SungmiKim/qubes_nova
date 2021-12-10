@@ -15,13 +15,13 @@
 }
 
 .swiper-slide.slide1 {
-  background: url("../../images/bg/main1.png") no-repeat center / 100% auto;
+  background: url("../../images/bg/main1.jpg") no-repeat center / 100% auto;
 }
 .swiper-slide.slide2 {
-  background: url("../../images/bg/main2.png") no-repeat center / 100% auto;
+  background: url("../../images/bg/main2_ver1.png") no-repeat center / 100% auto;
 }
 .swiper-slide.slide3 {
-  background: url("../../images/bg/main3.png") no-repeat center / 100% auto;
+  background: url("../../images/bg/main3_ver1.png") no-repeat center / 100% auto;
 }
 
 .swiper-slide .slide_info {
@@ -38,7 +38,7 @@
 }
 
 .swiper-slide.slide1 .slide_info > img {
-  max-width: 300px;
+  max-width: 340px;
   width: 20vw;
   min-width: 150px;
 }
@@ -759,7 +759,7 @@
   }
 
   .main .sec_04 .col .card {
-    width: 200px;
+    width: 235px;
     margin-right: 12px;
   }
 

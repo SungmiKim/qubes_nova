@@ -8,6 +8,9 @@
   .quick_menu {
     position: relative;
   }
+  .quick_menu.pc_ver {
+    display: none;
+  }
 }
 
 @media all and (max-width: 1160px) {
@@ -130,6 +133,7 @@
     display: none;
   }
 
+  .container.sub .quick_menu,
   .quick_menu {
     top: unset;
     transform: inherit;
@@ -283,6 +287,14 @@
     flex: none;
   }
 
+  footer .left .info_wrap {
+    margin: 24px 0 0;
+  }
+
+  footer .left .co_num {
+    margin-bottom: 32px;
+  }
+
   #subscribe_form {
     width: 100%;
   }
@@ -294,16 +306,28 @@
   #subscribe_form .input_mail {
     width: 100%;
     height: 44px;
+    margin: 16px 0 10px;
   }
 
   #subscribe_form .input_mail::placeholder {
     font-size: 13px;
   }
 
+  #subscribe_form .wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
   #subscribe_form .btn_submit {
     width: 96px;
     height: 30px;
     font-size: 13px;
+  }
+
+  .icon_youtube {
+    max-width: 40px;
+    margin-left: 0;
   }
 }
 

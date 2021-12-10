@@ -294,6 +294,7 @@ header .mo_menu {
 /* 상단 검색창 End */
 
 /* 퀵 메뉴 */
+
 .quick_menu {
   position: fixed;
   top: 50%;
@@ -303,6 +304,11 @@ header .mo_menu {
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(175, 175, 175, 0.25);
   border-radius: 5px;
+}
+
+.container.sub .quick_menu {
+  top: 340px;
+  transform: translate(0%, 0%);
 }
 
 .quick_menu.index {
@@ -506,6 +512,11 @@ footer .footer_nav ul li a {
   color: rgba(255, 255, 255, 0.5);
 }
 
+#subscribe_form {
+  display: flex;
+  flex-direction: column;
+}
+
 #subscribe_form h2 {
   font-size: 15px;
 }
@@ -526,6 +537,11 @@ footer .footer_nav ul li a {
   color: rgba(255, 255, 255, 0.5);
 }
 
+#subscribe_form .wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 #subscribe_form .btn_submit {
   display: block;
   background: rgba(17, 17, 17, 0.2);
@@ -536,6 +552,17 @@ footer .footer_nav ul li a {
   box-sizing: border-box;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.icon_youtube {
+  max-width: 50px;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.icon_youtube img {
+  width: 100%;
+  display: block;
 }
 /* 푸터 End */
 
@@ -608,7 +635,7 @@ footer .footer_nav ul li a {
 .loc .nav_sec .eng_title {
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -633,14 +660,8 @@ footer .footer_nav ul li a {
   justify-content: center;
 }
 
-.loc .nav_sec .link_wrap .link_title {
-}
-
 .loc .nav_sec .link_wrap .link_title > span {
   color: #00b54d;
-}
-
-.loc .nav_sec .link_wrap .link_title > img {
 }
 
 .loc .nav_sec .link_wrap ul {
