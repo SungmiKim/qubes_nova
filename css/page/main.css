@@ -750,16 +750,24 @@
     height: 114px;
   }
 
+  .main .sec_04 .inner {
+    padding: 0 calc((100vw - 300px) / 2);
+  }
+
   .main .sec_04 .inner .card_wrap {
     overflow-x: scroll;
   }
+  .main .sec_04 .inner .card_wrap .col {
+    justify-content: space-around;
+  }
 
   .main .sec_04 .card_wrap .col {
-    width: max-content;
+    /* width: calc((100vw - 48px) * 4); */
+    width: calc(312px * 4);
   }
 
   .main .sec_04 .col .card {
-    width: 235px;
+    width: 300px;
     margin-right: 12px;
   }
 

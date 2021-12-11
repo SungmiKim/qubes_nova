@@ -555,14 +555,18 @@ footer .footer_nav ul li a {
 }
 
 .icon_youtube {
-  max-width: 50px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-left: auto;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .icon_youtube img {
+  max-width: 50px;
   width: 100%;
   display: block;
+  margin-left: 6px;
 }
 /* 푸터 End */
 
