@@ -536,6 +536,9 @@
   .swiper-container {
     height: 50vw;
   }
+  .swiper-slide {
+    background-size: 100% 100% !important;
+  }
 }
 
 @media all and (max-width: 1240px) {
