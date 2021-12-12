@@ -92,23 +92,45 @@ $(function () {
   $(".main .sec_01 .row .icon_menu").hover(
     function () {
       if (!$(this).hasClass("active")) {
-        var imgSrc = $(this).children(".img_wrap").children().attr("src").replace(".png", "");
+        var imgSrc = $(this).children(".img_wrap").children().attr("src");
+        const path = imgSrc.split(".");
+
         $(this).addClass("hover");
         $(this)
           .children(".img_wrap")
           .children()
-          .attr("src", imgSrc + "_color.png");
+          .attr("src", "." + path[1] + "_color.png");
       }
     },
     function () {
       if (!$(this).hasClass("active")) {
-        var imgSrc = $(this).children(".img_wrap").children().attr("src").replace("_color.png", "");
+        var imgSrc = $(this).children(".img_wrap").children().attr("src");
+        const path = imgSrc.split("_color");
         $(this).removeClass("hover");
         $(this)
           .children(".img_wrap")
           .children()
-          .attr("src", imgSrc + ".png");
+          .attr("src", path[0] + ".png");
       }
     }
   );
+
+  var $window = $(window);
+  var $quickMenu = $(".container.sub .quick_menu");
+  $(window).scroll(function () {
+    if (window.innerWidth > 768) {
+      if ($window.scrollTop() > 150) {
+        if ($window.scrollTop() - $window.height() > 374) {
+          $quickMenu.css("top", "unset").css("bottom", "150px");
+          console.log("여기");
+        } else {
+          $quickMenu.css("top", "50%").css("bottom", "unset");
+        }
+      } else {
+        $quickMenu.css("top", "500px").css("bottom", "unset");
+      }
+    } else {
+      console.log(3);
+    }
+  });
 });

@@ -307,8 +307,8 @@ header .mo_menu {
 }
 
 .container.sub .quick_menu {
-  top: 340px;
-  transform: translate(0%, 0%);
+  top: 500px;
+  bottom: unset;
 }
 
 .quick_menu.index {
