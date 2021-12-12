@@ -312,12 +312,9 @@ header .mo_menu {
 }
 
 .quick_menu.index {
-  z-index: 1;
-}
-
-.quick_menu.index {
   position: absolute;
   top: 100vh;
+  z-index: 1;
 }
 
 .quick_menu .menu_name {

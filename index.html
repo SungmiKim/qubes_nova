@@ -759,16 +759,27 @@
 
       // 퀵 메뉴
       var $window = $(window);
-      var $quickMenu = $(".quick_menu");
+      var $document = $(document);
+      var $quickMenu = $(".quick_menu.pc_ver");
+      var $footer = $("footer");
+
+      if (window.innerWidth > 768) {
+        $quickMenu.css("position", "absolute").css("top", "100vh").css("bottom", "unset");
+      }
+
       $(window).scroll(function () {
         if (window.innerWidth > 768) {
           if ($window.scrollTop() > $window.height() - $window.height() / 2) {
-            $quickMenu.removeClass("index");
+            if ($window.scrollTop() < $document.height() - $window.height() - $footer.outerHeight()) {
+              $quickMenu.css("position", "fixed").css("top", "50%").css("bottom", "unset");
+            } else {
+              $quickMenu.css("position", "fixed").css("top", "unset").css("bottom", "150px");
+            }
           } else {
-            $quickMenu.addClass("index");
+            $quickMenu.css("position", "absolute").css("top", "100vh").css("bottom", "unset");
           }
         } else {
-          $quickMenu.removeClass("index");
+          $quickMenu.css("position", "relative").css("bottom", "unset");
         }
       });
     </script>
