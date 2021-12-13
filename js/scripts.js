@@ -114,41 +114,9 @@ $(function () {
       }
     }
   );
-
-  var $window = $(window);
-  var $document = $(document);
-  var $quickMenu = $(".container.sub .quick_menu");
-  var $footer = $("footer");
-  $(window).scroll(function () {
-    if (window.innerWidth > 768) {
-      if ($window.scrollTop() > 150) {
-        if ($window.scrollTop() < $document.height() - $window.height() - $footer.outerHeight()) {
-          $quickMenu.css("top", "50%").css("bottom", "unset");
-        } else {
-          $quickMenu.css("top", "unset").css("bottom", "150px");
-        }
-      } else {
-        $quickMenu.css("top", "500px").css("bottom", "unset");
-      }
-    } else {
-      // console.log(3);
-    }
-  });
-
   $(window).resize(function () {
     if (window.innerWidth > 768) {
       $("header .mo_menu").css("display", "block");
-      if ($window.scrollTop() > 150) {
-        if ($window.scrollTop() < $document.height() - $window.height() - $footer.outerHeight()) {
-          $quickMenu.css("top", "50%").css("bottom", "unset");
-        } else {
-          $quickMenu.css("top", "unset").css("bottom", "150px");
-        }
-      } else {
-        $quickMenu.css("top", "500px").css("bottom", "unset");
-      }
-    } else {
-      $quickMenu.css("top", "unset").css("bottom", "unset");
     }
   });
 });

@@ -754,7 +754,7 @@
   }
 
   .main .sec_04 .inner {
-    padding: 0 calc((100vw - 300px) / 2);
+    padding: 0 calc((100vw - 288px) / 2);
   }
 
   .main .sec_04 .inner .card_wrap {
@@ -766,11 +766,11 @@
 
   .main .sec_04 .card_wrap .col {
     /* width: calc((100vw - 48px) * 4); */
-    width: calc(312px * 4);
+    width: calc(300px * 4);
   }
 
   .main .sec_04 .col .card {
-    width: 300px;
+    width: 288px;
     margin-right: 12px;
   }
 

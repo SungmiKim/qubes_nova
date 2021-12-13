@@ -25,6 +25,7 @@ window.onload = function () {
       });
       $first = $("#banner" + first);
       $last = $("#banner" + last);
+      $imgLeftWidth = $("#banner" + first).width();
       if ($first.position().left < -$imgLeftWidth) {
         // 제일 앞에 배너 제일 뒤로 옮김
         $first.css("left", $last.position().left + $last.width() + 20); // 여기서 배너 사이 간격 조절
