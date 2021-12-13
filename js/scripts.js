@@ -89,34 +89,38 @@ $(function () {
   });
 
   // 메인 아이콘 메뉴
-  $(".main .sec_01 .row .icon_menu").hover(
-    function () {
-      if (!$(this).hasClass("active")) {
-        var imgSrc = $(this).children(".img_wrap").children().attr("src");
-        const path = imgSrc.split(".");
+  // $(".main .sec_01 .row .icon_menu").hover(
+  //   function () {
+  //     if (!$(this).hasClass("active")) {
+  //       var imgSrc = $(this).children(".img_wrap").children().attr("src");
+  //       const path = imgSrc.split(".");
 
-        $(this).addClass("hover");
-        $(this)
-          .children(".img_wrap")
-          .children()
-          .attr("src", "." + path[1] + "_color.png");
-      }
-    },
-    function () {
-      if (!$(this).hasClass("active")) {
-        var imgSrc = $(this).children(".img_wrap").children().attr("src");
-        const path = imgSrc.split("_color");
-        $(this).removeClass("hover");
-        $(this)
-          .children(".img_wrap")
-          .children()
-          .attr("src", path[0] + ".png");
-      }
-    }
-  );
+  //       $(this).addClass("hover");
+  //       $(this)
+  //         .children(".img_wrap")
+  //         .children()
+  //         .attr("src", "." + path[1] + "_color.png");
+  //     }
+  //   },
+  //   function () {
+  //     if (!$(this).hasClass("active")) {
+  //       var imgSrc = $(this).children(".img_wrap").children().attr("src");
+  //       const path = imgSrc.split("_color");
+  //       $(this).removeClass("hover");
+  //       $(this)
+  //         .children(".img_wrap")
+  //         .children()
+  //         .attr("src", path[0] + ".png");
+  //     }
+  //   }
+  // );
   $(window).resize(function () {
     if (window.innerWidth > 768) {
       $("header .mo_menu").css("display", "block");
+      $(".bg").removeClass("show");
+    } else {
+      $("header .mo_menu").css("display", "none");
+      $(".bg").removeClass("show");
     }
   });
 });
